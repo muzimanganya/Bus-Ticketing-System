@@ -1,0 +1,13 @@
+class_name: ApiTester
+modules:
+    enabled:
+        - Yii2 
+        - REST:
+            url: http://localhost:8080/index-test.php/mobile/
+            depends: Yii2
+            part: Json
+            configFile: 'config/test.php'
+        - \Helper\Api
+    config:
+        Yii2:
+
